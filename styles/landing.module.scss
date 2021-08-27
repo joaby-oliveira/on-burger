@@ -1,6 +1,6 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
-
+@import "config/mixins";
 .carousel {
   width: 50%;
   margin: 8rem auto;
@@ -17,4 +17,8 @@
       transform: scale(1.0);
     }
   }
+}
+
+.title {
+  @include title-1;
 }
