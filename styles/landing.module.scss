@@ -6,7 +6,7 @@
   margin: 8rem auto;
   display: flex !important;
   align-items: center;
-  .slide{
+  .slide {
     transform: scale(0.8);
     transition: transform 0.3s;
     img {
@@ -14,7 +14,7 @@
     }
     &.activeSlide {
       opacity: 1;
-      transform: scale(1.0);
+      transform: scale(1);
     }
   }
 }
