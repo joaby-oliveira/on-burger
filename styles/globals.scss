@@ -1,5 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
-h1, h2, h3 {
-  font-family: 'Chelsea Market', sans-serif;
+@import "config/variables";
+@import "config/reset";
+@import "config/mixins";
+
+h1,
+h2,
+h3 {
+  font-family: $font-title;
+}
+
+body {
+  background: #000;
+  nav {
+    width: 100%;
+    background: $color-primary-1;
+    padding: 2rem 4rem;
+    .menuIcon {
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// Flex
+.flex {
+  display: flex;
+}
+
+.mainCenter {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.crossCenter {
+  align-items: center;
+}
+
+.mainStart {
+  justify-content: flex-start;
+}
+
+.crossStart {
+  align-items: flex-start;
+}
+
+.crossEnd {
+  align-items: flex-end;
+}
+
+.spaceBetween {
+  justify-content: space-between;
 }
