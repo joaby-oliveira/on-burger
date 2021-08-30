@@ -10,8 +10,37 @@ h3 {
   font-family: $font-title;
 }
 
+p {
+  font-family: $font-text;
+}
+
 body {
+  -webkit-font-smoothing: antialised;
   background: #000;
+  .topbar {
+    width: 100%;
+    padding: 1rem;
+    background: $color-secondary-1 url("../public/pattern.svg") center;
+    color: red;
+    position: relative;
+    transition: 0.2s ease;
+    &.closed {
+      display: none;
+      animation: closeTopBar 0.2s;
+    }
+    p {
+      text-align: center;
+      width: 100%;
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: $color-primary-1;
+    }
+    svg {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+    }
+  }
   nav {
     .navbar {
       position: sticky;
@@ -45,7 +74,7 @@ body {
         li {
           a {
             display: block;
-            font-family: 'Raleway', sans-serif;
+            font-family: "Raleway", sans-serif;
             font-size: 2rem;
             color: $color-secondary-3;
             text-align: center;
