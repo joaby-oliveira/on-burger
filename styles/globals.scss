@@ -13,16 +13,60 @@ h3 {
 body {
   background: #000;
   nav {
-    width: 100%;
-    background: $color-primary-1;
-    padding: 2rem 4rem;
-    .menuIcon {
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.1);
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      width: 100%;
+      background: $color-primary-1;
+      padding: 2rem 4rem;
+      .menuIcon {
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .menu {
+      transition: 1s transform;
+      width: 100%;
+      z-index: 1;
+      height: calc(100vh - 117px);
+      background: $color-primary-1;
+      border-top: 4px solid $color-primary-3;
+      &.menuOpen {
+        transform: translateY(0);
+      }
+      &.menuClosed {
+        position: absolute;
+        transform: translateY(-1000px);
+      }
+      ul {
+        li {
+          a {
+            display: block;
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            color: $color-secondary-3;
+            text-align: center;
+            transition: 0.2s;
+            text-transform: uppercase;
+            &.active {
+              color: $color-enphasis-3;
+            }
+            &:hover {
+              color: $color-primary-3;
+            }
+          }
+          margin: 1rem;
+        }
       }
     }
   }
+}
+
+.title {
+  @include title-1;
 }
 
 // Flex

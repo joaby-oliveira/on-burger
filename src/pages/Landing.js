@@ -5,7 +5,10 @@ const Landing = () => {
   return (
     <section>
       <Carousel />
-      <h1 className={styles.title}>Prove o hambúrguer mais rústico </h1>
+      <h1 className="title">Prove o hambúrguer mais rústico </h1>
+      <h1 className="title">Prove o hambúrguer mais rústico </h1>
+      <h1 className="title">Prove o hambúrguer mais rústico </h1>
+      <h1 className="title">Prove o hambúrguer mais rústico </h1>
     </section>
   )
 }
