@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Navbar from './Components/Navbar'
 import Topbar from './Components/Topbar'
-import Landing from './Landing'
+import {Landing} from './Landing'
 export default function Home() {
   return (
     <div>
