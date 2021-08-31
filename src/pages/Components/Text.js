@@ -1,6 +1,8 @@
-export const Text = ({chidlren}) => {
+import styles from "../../../styles/Components.module.scss"
+
+export const Text = ({children}) => {
   return (
-    <p >
+    <p className={styles.text}>
       {children}
     </p>
   )
