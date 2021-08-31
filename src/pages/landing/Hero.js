@@ -1,5 +1,5 @@
 import Carousel from "../Components/Carousel"
-import styles from "../../../styles/landing.module.scss"
+import styles from "../../../styles/Landing.module.scss"
 
 export const Hero = () => {
   return (
