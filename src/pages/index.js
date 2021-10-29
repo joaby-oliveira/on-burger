@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Hero } from './Sections/landing/Hero'
+import { Offer } from './Sections/landing/Offer'
 export default function Home() {
   return (
     <div>
@@ -9,6 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <Offer />
     </div>
   )
 }

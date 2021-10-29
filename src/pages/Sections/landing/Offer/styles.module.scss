@@ -1,0 +1,44 @@
+@import '../../../../../styles/config/variables';
+
+.container {
+  background: url('../../../../../public/offerBackground.png');
+  padding: 4rem 0;
+
+  .title,
+  .subtitle {
+    color: #d8c946;
+  }
+
+  .title {
+    font: 500 4.5rem Staatliches;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle,
+  .dayOfferText,
+  .offerTitle {
+    color: $color-secondary-1;
+  }
+
+  .subtitle {
+    font: 400 2.25rem Staatliches;
+    color: $color-secondary-1;
+  }
+
+  .dayOfferText {
+    font: 1.125rem 'Chelsea Market';
+  }
+
+  .offerTitle {
+    margin-top: 1rem;
+    font: 3rem 'Chelsea Market';
+    .highlight {
+      color: $color-enphasis-2;
+    }
+  }
+
+  .imageContainer {
+    width: 30%;
+    margin: 2rem 0;
+  }
+}
