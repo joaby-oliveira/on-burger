@@ -1,15 +1,19 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../../../styles/Components.module.scss'
-import logo from '../../../public/logo.svg'
+import styles from './styles.module.scss'
+import logo from '../../../../public/logo.svg'
 import { useState } from 'react'
 const Navbar = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
-      <nav className="flex column">
-        <div className={`${styles.navbar} flex spaceBetween crossCenter`}>
-          <Image src={logo} />
+      <nav className={`${styles.navbar} flex column`}>
+        <div className={`${styles.navbarContent} flex spaceBetween crossCenter`}>
+          <Link href="/">
+            <a>
+              <Image src={logo} />
+            </a>
+          </Link>
           {!isMenuOpen && (
             <svg className={styles.menuIcon} onClick={() => setIsMenuOpen(!isMenuOpen)} width="54" height="30" viewBox="0 0 54 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="3" width="51" height="4" fill="#CEC9C9" />

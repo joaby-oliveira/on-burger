@@ -1,0 +1,27 @@
+@import '../../../../styles/config/variables';
+
+.topbar {
+  width: 100%;
+  padding: 1rem;
+  background: $color-secondary-1 url("../../../../public/pattern.svg") center;
+  color: red;
+  position: relative;
+  transition: 0.2s ease;
+  &.closed {
+    display: none;
+    animation: closeTopBar 0.2s;
+  }
+  p {
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: $color-primary-1;
+  }
+  svg {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+}

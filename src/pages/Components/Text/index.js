@@ -1,4 +1,4 @@
-import styles from "../../../styles/Components.module.scss"
+import styles from "./styles.module.scss"
 
 export const Text = ({children}) => {
   return (

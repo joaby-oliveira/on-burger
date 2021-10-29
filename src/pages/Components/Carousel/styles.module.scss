@@ -1,0 +1,27 @@
+@import '../../../../styles/config/variables';
+
+.carousel {
+  width: 50%;
+  margin: 8rem auto;
+  display: flex !important;
+  align-items: center;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+  .arrow {
+    cursor: pointer;
+  }
+  .slide {
+    transform: scale(0.8);
+    transition: transform 0.3s;
+    img {
+      height: 160px;
+      margin: 0 auto;
+    }
+    &.activeSlide {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

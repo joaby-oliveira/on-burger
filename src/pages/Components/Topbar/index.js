@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import styles from "../../../styles/Components.module.scss"
+import styles from "./styles.module.scss"
 
 const Topbar = () => {
   const [isClosed, setIsClosed] = useState(false)

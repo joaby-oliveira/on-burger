@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Hero } from './landing/Hero'
+import { Hero } from './Sections/landing/Hero'
 export default function Home() {
   return (
     <div>
